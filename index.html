@@ -2,21 +2,137 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Tailwind Site</title>
-    <link href="output.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chas Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .text-balance {
+        text-wrap: balance;
+      }
+    </style>
   </head>
-  <body class="bg-gray-100 text-center p-10">
-    <h1 class="text-4xl font-bold text-blue-600">Hello Tailwind!</h1>
-  </body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Tailwind Site</title>
-    <link href="output.css" rel="stylesheet" />
-  </head>
-  <body class="bg-gray-100 text-center p-10">
-    <h1 class="text-4xl font-bold text-blue-600">Hello Tailwind!</h1>
+  <body class="bg-white text-gray-950">
+    <header class="pt-6 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <a href="/" class="flex items-center space-x-2">
+          <img
+            src="https://image.pngaaa.com/779/6447779-middle.png"
+            alt="Tailwind Logo"
+            class="w-6 h-6"
+          />
+          <span class="font-semibold">Tailwind CSS</span>
+        </a>
+
+        <nav
+          class="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-600"
+        >
+          <a href="#" class="hover:text-gray-900">Docs</a>
+          <a href="#" class="hover:text-gray-900">Blog</a>
+          <a href="#" class="hover:text-gray-900">Showcase</a>
+
+          <div class="relative">
+            <input
+              type="text"
+              placeholder="Search..."
+              class="pl-8 pr-3 py-1.5 text-sm border border-gray-300 rounded-md placeholder-gray-400 focus:ring-2 focus:ring-sky-500 focus:outline-none"
+            />
+            <svg
+              class="w-4 h-4 text-gray-400 absolute left-2.5 top-1/2 transform -translate-y-1/2"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 100-15 7.5 7.5 0 000 15z"
+              />
+            </svg>
+          </div>
+        </nav>
+
+        <div class="hidden md:flex items-center space-x-4">
+          <a
+            href="#"
+            class="text-sm font-medium text-gray-600 hover:text-gray-900"
+            >GitHub</a
+          >
+          <a
+            href="#"
+            class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-gray-900 hover:bg-black rounded-md"
+            >Get started</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <section class="mt-24 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+        <div
+          aria-hidden="true"
+          class="mb-2 h-6 px-2 font-mono text-xs text-black/20 dark:text-white/25 whitespace-pre inline-block"
+        >
+          text-4xl sm:text-5xl lg:text-6xl text-gray-950 tracking-tighter
+          text-balance
+        </div>
+
+        <h1
+          class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-950 tracking-tighter text-balance leading-tight max-w-3xl mx-auto border border-gray-300 p-6 rounded-md"
+        >
+          Rapidly build modern websites without ever leaving your HTML.
+        </h1>
+
+        <div
+          aria-hidden="true"
+          class="mt-6 h-6 px-2 font-mono text-xs text-black/20 dark:text-white/25 whitespace-pre inline-block"
+        >
+          text-lg text-gray-950 font-medium
+        </div>
+
+        <p
+          class="mt-6 text-lg text-gray-950 font-medium max-w-2xl mx-auto border border-gray-300 p-6 rounded-md"
+        >
+          A utility-first CSS framework packed with classes like
+          <code class="font-mono bg-gray-100 px-1 rounded">flex</code>,
+          <code class="font-mono bg-gray-100 px-1 rounded">pt-4</code>,
+          <code class="font-mono bg-gray-100 px-1 rounded">text-center</code>,
+          and
+          <code class="font-mono bg-gray-100 px-1 rounded">rotate-90</code> that
+          can be composed to build any design, directly in your markup.
+        </p>
+
+        <div
+          class="mt-8 flex flex-col sm:flex-row sm:items-center sm:justify-center gap-4 border border-gray-300 p-6 rounded-md"
+        >
+          <a
+            href="#"
+            class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-sky-500 hover:bg-sky-600 rounded-md"
+          >
+            Get started
+          </a>
+          <div class="relative w-full sm:w-auto sm:min-w-[300px]">
+            <input
+              type="text"
+              placeholder="Search documentation..."
+              class="w-full pl-10 pr-4 py-2.5 border border-gray-300 rounded-md shadow-sm text-sm placeholder-gray-400 focus:ring-2 focus:ring-sky-500 focus:outline-none"
+            />
+            <svg
+              class="w-5 h-5 text-gray-400 absolute left-3 top-1/2 transform -translate-y-1/2"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 100-15 7.5 7.5 0 000 15z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
